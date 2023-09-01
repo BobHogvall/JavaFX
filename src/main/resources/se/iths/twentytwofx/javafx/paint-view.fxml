@@ -42,6 +42,6 @@
             <Button fx:id="save" onAction="#saveAction" mnemonicParsing="false" text="Save" />
          </children>
       </HBox>
-      <Canvas fx:id="canvas" height="350.0" width="600.0" />
+      <Canvas height="350.0" width="600.0" fx:id="canvas" onMouseClicked="#canvasAction"/>
    </children>
 </VBox>
