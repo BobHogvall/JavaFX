@@ -101,7 +101,7 @@
       <workItem from="1673943000272" duration="988000" />
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
-      <workItem from="1693559341006" duration="15275000" />
+      <workItem from="1693559341006" duration="15640000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -157,7 +157,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1693661891121</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="unwrap in view">
+      <created>1693662036548</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1693662036548</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +189,7 @@
     <MESSAGE value="add abstract class shape and circle + rectangle shape to inherit shape" />
     <MESSAGE value="create a factory" />
     <MESSAGE value="add more to view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more to view" />
+    <MESSAGE value="unwrap in view" />
+    <option name="LAST_COMMIT_MESSAGE" value="unwrap in view" />
   </component>
 </project>

@@ -16,7 +16,7 @@
         <Button fx:id="rectangle" mnemonicParsing="false" onAction="#rectangleAction" text="Rectangle" />
         <ColorPicker fx:id="colorPicker" />
         <Button fx:id="colorChanger" mnemonicParsing="false" onAction="#colorChangerAction" text="Change Color" />
-        <TextField prefHeight="26.0" prefWidth="33.0" />
+        <TextField fx:id="sizePicker" prefHeight="26.0" prefWidth="33.0" />
         <Button fx:id="sizeChanger" mnemonicParsing="false" onAction="#sizeChangerAction" text="Change Size" />
         <Button fx:id="undo" mnemonicParsing="false" onAction="#undoAction" text="Undo" />
         <Button fx:id="redo" mnemonicParsing="false" onAction="#redoAction" text="Redo" />

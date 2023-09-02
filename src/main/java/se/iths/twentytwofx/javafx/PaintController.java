@@ -4,10 +4,7 @@ import javafx.event.ActionEvent;
 
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.Button;
-import javafx.scene.control.ColorPicker;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 
 public class PaintController {
@@ -25,18 +22,23 @@ public class PaintController {
     public Canvas canvas;
     public Button colorChanger;
     public Button sizeChanger;
+    public TextField sizePicker;
+
+    public GraphicsContext graphicsContext;
 
     PaintModel paintModel = new PaintModel();
-    public GraphicsContext graphicsContext;
+
 
     public void initialize(){
         graphicsContext = canvas.getGraphicsContext2D();
     }
 
-    public void menuBarAction(){
-        //todo: vilka actions ska finnas här, ska vi ens använda den?
-        //todo: metoder för menuBar + items?
+    public void actionExit(ActionEvent actionEvent) {
     }
+
+    public void onSave(ActionEvent actionEvent) {
+    }
+
     public void circleAction(ActionEvent actionEvent){
         // todo: metod för att skapa cirkel
     }
@@ -44,7 +46,14 @@ public class PaintController {
         // todo: metod för att skapa rektangel
     }
     public void colorPickerAction(){
-        // todo: metod för att välja färg
+        //har ingen action i view
+        // todo: metod för att ändra färg
+    }
+    public void colorChangerAction(ActionEvent actionEvent) {
+        //todo: metod för att välja ändrad färg?
+    }
+    public void sizeChangerAction(ActionEvent actionEvent) {
+        //todo: change size
     }
     public void undoAction(ActionEvent actionEvent){
         //todo: metod för att radera föregående, ev flera
@@ -65,16 +74,5 @@ public class PaintController {
         double y = mouseEvent.getY();
     }
 
-    public void actionExit(ActionEvent actionEvent) {
-    }
-
-    public void onSave(ActionEvent actionEvent) {
-    }
-
-    public void sizeChangerAction(ActionEvent actionEvent) {
-    }
-
-    public void colorChangerAction(ActionEvent actionEvent) {
-    }
 }
 
