@@ -5,6 +5,7 @@ import javafx.beans.property.StringProperty;
 import se.iths.twentytwofx.javafx.Shapes.PointCoordinates;
 
 import java.io.File;
+import java.nio.file.Path;
 
 public class PaintModel {
 // toppen av ett isberg: under kan vi ha hur många klasser som helst.
@@ -16,7 +17,7 @@ public class PaintModel {
     StringProperty sizePicker = new SimpleStringProperty();
 
 
-    public void saveToFile(File file){
+    public void saveToFile(Path filePath){
 
     }
 

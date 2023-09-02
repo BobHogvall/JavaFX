@@ -10,6 +10,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.File;
+import java.nio.file.Path;
 
 public class PaintController {
 
@@ -77,9 +78,9 @@ public class PaintController {
         fileChooser.getExtensionFilters().clear();
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV","*.csv"));
 
-        File file = fileChooser.showOpenDialog(stage);
-        if (file != null)
-            paintModel.saveToFile(file);
+        File filePath = fileChooser.showSaveDialog(stage);
+        if (filePath != null)
+            paintModel.saveToFile(filePath.toPath());
     }
 
     public void canvasAction(MouseEvent mouseEvent) {
