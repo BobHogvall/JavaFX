@@ -1,13 +1,13 @@
 package se.iths.twentytwofx.javafx;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
+
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
-import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
 import javafx.scene.input.MouseEvent;
 
 public class PaintController {
@@ -16,13 +16,16 @@ public class PaintController {
     //todo: listener/observable med Boolean/StringProperty för att registera förändringar
 
     public MenuBar menuBar;
+    public MenuItem exit;
+    public MenuItem save;
     public Button circle;
     public Button rectangle;
     public ColorPicker colorPicker;
     public Button undo;
     public Button redo;
-    public Button save;
     public Canvas canvas;
+    public Button colorChanger;
+    public Button sizeChanger;
 
     PaintModel paintModel = new PaintModel();
     public GraphicsContext graphicsContext;
@@ -63,5 +66,16 @@ public class PaintController {
         double y = mouseEvent.getY();
     }
 
+    public void actionExit(ActionEvent actionEvent) {
+    }
+
+    public void onSave(ActionEvent actionEvent) {
+    }
+
+    public void sizeChangerAction(ActionEvent actionEvent) {
+    }
+
+    public void colorChangerAction(ActionEvent actionEvent) {
+    }
 }
 
