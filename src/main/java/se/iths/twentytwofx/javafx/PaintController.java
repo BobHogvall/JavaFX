@@ -6,6 +6,10 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
+import java.io.File;
 
 public class PaintController {
 
@@ -24,10 +28,14 @@ public class PaintController {
     public Button sizeChanger;
     public TextField sizePicker;
 
+    public Stage stage;
     public GraphicsContext graphicsContext;
 
     PaintModel paintModel = new PaintModel();
 
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
 
     public void initialize(){
         graphicsContext = canvas.getGraphicsContext2D();
@@ -63,6 +71,15 @@ public class PaintController {
     }
     public void saveAction(ActionEvent actionEvent){
         //todo: metod för att spara
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Save as");
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+        fileChooser.getExtensionFilters().clear();
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV","*.csv"));
+
+        File file = fileChooser.showOpenDialog(stage);
+        if (file != null)
+            paintModel.saveToFile(file);
     }
 
     public void canvasAction(MouseEvent mouseEvent) {

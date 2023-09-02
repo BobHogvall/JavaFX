@@ -12,6 +12,10 @@ public class PaintApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(PaintApplication.class.getResource("paint-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
+
+        PaintController controller = fxmlLoader.getController();
+        controller.setStage(stage);
+
         stage.setTitle("Paint!");
         stage.setScene(scene);
         stage.show();
