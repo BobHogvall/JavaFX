@@ -15,7 +15,6 @@ public class PaintController {
     //Controller tar emot händelser och skickar vidare vad som hänt till modellen
     //todo: listener/observable med Boolean/StringProperty för att registera förändringar
 
-    public MenuBar menuBar;
     public MenuItem exit;
     public MenuItem save;
     public Button circle;
