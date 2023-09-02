@@ -18,6 +18,12 @@ public class PaintModel {
 
 
     public void saveToFile(Path filePath){
+//        StringBuffer output = new StringBuffer();
+//        for (ShapeCreator s : shapeObservableList) {
+//            output.append(s.getShape)
+//        Todo: kommer ev ändras pga svg och har inget att skriva här just nu
+        // also har bara skrivit grejer här i cuz
+        }
 
     }
 
