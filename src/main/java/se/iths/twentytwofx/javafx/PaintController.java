@@ -12,9 +12,7 @@ import javafx.scene.input.MouseEvent;
 
 public class PaintController {
 
-    PaintModel paintModel = new PaintModel();
-    @FXML
-    private Label welcomeText;
+    //todo: listener/observable med Boolean/StringProperty för att registera förändringar
 
     public MenuBar menuBar;
     public Button circle;
@@ -25,6 +23,7 @@ public class PaintController {
     public Button save;
     public Canvas canvas;
 
+    PaintModel paintModel = new PaintModel();
     public GraphicsContext graphicsContext;
 
     public void initialize(){
@@ -60,12 +59,6 @@ public class PaintController {
         double x = mouseEvent.getX();
         double y = mouseEvent.getY();
     }
-
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
-
 
 }
 
