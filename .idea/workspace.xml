@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="update saveToFile in Model">
+    <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" afterDir="false" />
     </list>
@@ -101,7 +101,7 @@
       <workItem from="1673943000272" duration="988000" />
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
-      <workItem from="1693559341006" duration="18220000" />
+      <workItem from="1693559341006" duration="19884000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -181,7 +181,13 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1693670727245</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="update saveToFile in Model">
+      <created>1693671153905</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1693671153905</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +217,7 @@
     <MESSAGE value="edit view" />
     <MESSAGE value="add save with csv" />
     <MESSAGE value="update save to Java nio" />
-    <option name="LAST_COMMIT_MESSAGE" value="update save to Java nio" />
+    <MESSAGE value="update saveToFile in Model" />
+    <option name="LAST_COMMIT_MESSAGE" value="update saveToFile in Model" />
   </component>
 </project>

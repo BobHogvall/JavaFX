@@ -4,4 +4,6 @@ public abstract class Shape {
 
     //Todo: add information to be inherited by the actual shapes
 
+    public abstract void draw();
+
 }
