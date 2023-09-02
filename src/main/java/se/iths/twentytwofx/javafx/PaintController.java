@@ -12,6 +12,7 @@ import javafx.scene.input.MouseEvent;
 
 public class PaintController {
 
+    //Controller tar emot händelser och skickar vidare vad som hänt till modellen
     //todo: listener/observable med Boolean/StringProperty för att registera förändringar
 
     public MenuBar menuBar;
@@ -55,6 +56,8 @@ public class PaintController {
 
     public void canvasAction(MouseEvent mouseEvent) {
         //todo: metod för att rita på canvas
+        // if  shape exist do x
+        // else if  create new shape
 
         double x = mouseEvent.getX();
         double y = mouseEvent.getY();

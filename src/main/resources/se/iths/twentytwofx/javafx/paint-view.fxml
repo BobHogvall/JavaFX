@@ -32,16 +32,14 @@
           </Menu>
         </menus>
       </MenuBar>
-      <HBox prefHeight="24.0" prefWidth="600.0">
-         <children>
-            <Button fx:id="circle" onAction="#circleAction" mnemonicParsing="false" text="Circle" />
-            <Button fx:id="rectangle" onAction="#rectangleAction" mnemonicParsing="false" text="Rectangle" />
-            <ColorPicker fx:id="colorPicker" />
-            <Button fx:id="undo" onAction="#undoAction" mnemonicParsing="false" text="Undo" />
-            <Button fx:id="redo" onAction="#redoAction" mnemonicParsing="false" text="Redo" />
-            <Button fx:id="save" onAction="#saveAction" mnemonicParsing="false" text="Save" />
-         </children>
-      </HBox>
+       <HBox prefHeight="24.0" prefWidth="600.0">
+           <Button fx:id="circle" onAction="#circleAction" mnemonicParsing="false" text="Circle"/>
+           <Button fx:id="rectangle" onAction="#rectangleAction" mnemonicParsing="false" text="Rectangle"/>
+           <ColorPicker fx:id="colorPicker"/>
+           <Button fx:id="undo" onAction="#undoAction" mnemonicParsing="false" text="Undo"/>
+           <Button fx:id="redo" onAction="#redoAction" mnemonicParsing="false" text="Redo"/>
+           <Button fx:id="save" onAction="#saveAction" mnemonicParsing="false" text="Save"/>
+       </HBox>
       <Canvas height="350.0" width="600.0" fx:id="canvas" onMouseClicked="#canvasAction"/>
    </children>
 </VBox>

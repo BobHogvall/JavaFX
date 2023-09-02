@@ -1,6 +1,6 @@
 package se.iths.twentytwofx.javafx.Shapes;
 
-public enum GeometricShapes {
+public enum ShapeType {
     CIRCLE,
     RECTANGLE
 }
