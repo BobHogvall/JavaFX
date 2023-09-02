@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PointCoordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/PaintModelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/GeometricShapes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/PaintModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/PaintModelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -74,7 +74,7 @@
       <module name="javafx" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="se.iths.twentytwofx.javafx.*" />
+          <option name="PATTERN" value="se.iths.twentytwofx.javafx.Shapes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,7 +104,7 @@
       <workItem from="1673943000272" duration="988000" />
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
-      <workItem from="1693559341006" duration="8581000" />
+      <workItem from="1693559341006" duration="9491000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -130,7 +130,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1693574646350</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="remove mistake in model to record">
+      <created>1693642566311</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1693642566311</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +157,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="add to controller class and view" />
     <MESSAGE value="edit canvas" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit canvas" />
+    <MESSAGE value="remove mistake in model to record" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove mistake in model to record" />
   </component>
 </project>
