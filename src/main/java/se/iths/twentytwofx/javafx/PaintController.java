@@ -44,6 +44,8 @@ public class PaintController {
         choiceBox.setItems(paintModel.getShapeTypeList());
 
         choiceBox.setValue(ShapeType.CIRCLE);
+        choiceBox.valueProperty().bindBidirectional(paintModel.currentShapeTypeProperty());
+
 
         exit.setOnAction(this::actionExit);
 
