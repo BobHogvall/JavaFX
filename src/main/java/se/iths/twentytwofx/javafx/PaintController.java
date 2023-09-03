@@ -41,6 +41,7 @@ public class PaintController {
         colorPicker.valueProperty().bindBidirectional(paintModel.colorProperty());
         sizePicker.textProperty().bindBidirectional(paintModel.sizeProperty());
     }
+
     public void setStage(Stage stage) {
         this.stage = stage;
     }
@@ -48,6 +49,30 @@ public class PaintController {
     public void canvasAction(MouseEvent mouseEvent) {
         Shape shape = ShapeCreator.createShape(choiceBox.getValue(), mouseEvent.getX(), mouseEvent.getY());
         System.out.println(shape);
+    }
+
+    public void actionExit(ActionEvent actionEvent) {
+        Platform.exit();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   // public void canvasAction(MouseEvent mouseEvent) {
+     //   Shape shape = ShapeCreator.createShape(choiceBox.getValue(), mouseEvent.getX(), mouseEvent.getY());
+     //   System.out.println(shape);
         // , ShapeParameters shapeParameters, ShapeType type
         // får inte ha mer än en inparameter här
         //todo: metod för att rita på canvas
@@ -61,7 +86,7 @@ public class PaintController {
         //todo: metod för att lägga in i undo-lista för att sedan kunna radera
         //todo: något behöver kollas annars:
         //  ShapeCreator.createShape(ShapeType.CIRCLE, shapeParameters);
-    }
+    //}
 
     // if they press circle ShapeType=Circle
     // bring: color, size and where they press to get the right shape
@@ -69,9 +94,6 @@ public class PaintController {
     // then bring: type and Parameters to -> createShape
 
 
-    public void actionExit(ActionEvent actionEvent) {
-        Platform.exit();
-    }
 
     public void onSave(ActionEvent actionEvent) {
     }

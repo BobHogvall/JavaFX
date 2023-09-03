@@ -100,7 +100,7 @@
       <workItem from="1673943000272" duration="988000" />
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
-      <workItem from="1693559341006" duration="35368000" />
+      <workItem from="1693559341006" duration="35632000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -264,7 +264,13 @@
       <option name="presentableId" value="LOCAL−00027" />
       <updated>1693769475871</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL−00028" summary="remove unnecessary exitAction from initialization">
+      <created>1693769742094</created>
+      <option name="number" value="LOCAL−00028" />
+      <option name="presentableId" value="LOCAL−00028" />
+      <updated>1693769742094</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +288,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add to controller class and view" />
     <MESSAGE value="edit canvas" />
     <MESSAGE value="remove mistake in model to record" />
     <MESSAGE value="create enum for shapes" />
@@ -307,7 +312,8 @@
     <MESSAGE value="remove observable list from controller to model because it shows data for the user and should therefor be handled by the model class" />
     <MESSAGE value="move currentShapeType to model from controller" />
     <MESSAGE value="initialize model fields in controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize model fields in controller" />
+    <MESSAGE value="remove unnecessary exitAction from initialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary exitAction from initialization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
