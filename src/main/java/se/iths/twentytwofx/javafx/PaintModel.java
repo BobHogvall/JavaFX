@@ -28,12 +28,54 @@ public class PaintModel {
     private final ObjectProperty<Color> color;
     private final ObjectProperty<Double> size;
 
+    public ObservableList<Shape> getShapeList() {
+        return shapeList;
+    }
+
+    public ObservableList<ShapeType> getShapeTypeList() {
+        return shapeTypeList;
+    }
+
+    public Color getColor() {
+        return color.get();
+    }
+
+    public ObjectProperty<Color> colorProperty() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color.set(color);
+    }
+
+    public Double getSize() {
+        return size.get();
+    }
+
+    public ObjectProperty<Double> sizeProperty() {
+        return size;
+    }
+
+    public void setSize(Double size) {
+        this.size.set(size);
+    }
+
     public PaintModel(){
         shapeList = observableArrayList();
         shapeTypeList = FXCollections.observableList(observableArrayList(ShapeType.values()));
         color = new SimpleObjectProperty<>(Color.BLACK);
         size = new SimpleObjectProperty<>(25.0);
     }
+
+
+
+
+
+
+
+
+
+
 
 
     private PointCoordinates pointCoordinates;

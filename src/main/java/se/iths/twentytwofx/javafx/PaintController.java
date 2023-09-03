@@ -22,36 +22,39 @@ public class PaintController {
     //Controller tar emot händelser och skickar vidare vad som hänt till modellen
     //todo: listener/observable med Boolean/StringProperty för att registera förändringar
 
+    PaintModel paintModel = new PaintModel();
+
     public MenuItem exit;
     public MenuItem save;
     public ChoiceBox<ShapeType> choiceBox;
     public ColorPicker colorPicker;
     public Button undo;
-    public Canvas canvas;
     public Button colorChanger;
     public Button sizeChanger;
     public TextField sizePicker;
     //selector
-
+    public Canvas canvas;
     public Stage stage;
     public GraphicsContext graphicsContext;
 
     ObservableList<ShapeType> shapeTypeList = FXCollections.observableArrayList(ShapeType.values()); // denna ska ligga i model
 
-    PaintModel paintModel = new PaintModel();
 
-    public void setStage(Stage stage) {
-        this.stage = stage;
-    }
 
     public void initialize(){
         graphicsContext = canvas.getGraphicsContext2D();
         choiceBox.setItems(shapeTypeList);
+        choiceBox.setItems(paintModel.getShapeTypeList());
+
         choiceBox.setValue(ShapeType.CIRCLE);
 
         exit.setOnAction(this::actionExit);
 
     }
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
+
     public void canvasAction(MouseEvent mouseEvent) {
         Shape shape = ShapeCreator.createShape(choiceBox.getValue(), mouseEvent.getX(), mouseEvent.getY());
         System.out.println(shape);
