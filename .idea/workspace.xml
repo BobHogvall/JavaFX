@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/PaintModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/PaintModelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/iths/twentytwofx/javafx/paint-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/iths/twentytwofx/javafx/paint-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <workItem from="1673943000272" duration="988000" />
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
-      <workItem from="1693559341006" duration="33443000" />
+      <workItem from="1693559341006" duration="33784000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -225,7 +223,13 @@
       <option name="presentableId" value="LOCAL−00020" />
       <updated>1693751337630</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL−00021" summary="update model class with things for &quot;representing application data&quot;">
+      <created>1693767991983</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1693767991983</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +266,8 @@
     <MESSAGE value="add comments to canvasAction to try and figure out how it is supposed to work and what it needs and from where - what utter chaos" />
     <MESSAGE value="make exit action work&#10;remove in parameters for canvasAction since it can only have one" />
     <MESSAGE value="change circle/square buttons to choiceBox and simplify createShape to match the lecture to get a better understanding of how everything is connected and their functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="change circle/square buttons to choiceBox and simplify createShape to match the lecture to get a better understanding of how everything is connected and their functions" />
+    <MESSAGE value="update model class with things for &quot;representing application data&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="update model class with things for &quot;representing application data&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

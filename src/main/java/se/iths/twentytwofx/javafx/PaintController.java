@@ -24,19 +24,18 @@ public class PaintController {
 
     public MenuItem exit;
     public MenuItem save;
-    // public Button circle;
-    // public Button rectangle;
+    public ChoiceBox<ShapeType> choiceBox;
     public ColorPicker colorPicker;
     public Button undo;
-    public Button redo;
     public Canvas canvas;
     public Button colorChanger;
     public Button sizeChanger;
     public TextField sizePicker;
+    //selector
 
     public Stage stage;
     public GraphicsContext graphicsContext;
-    public ChoiceBox<ShapeType> choiceBox;
+
     ObservableList<ShapeType> shapeTypeList = FXCollections.observableArrayList(ShapeType.values()); // denna ska ligga i model
 
     PaintModel paintModel = new PaintModel();
