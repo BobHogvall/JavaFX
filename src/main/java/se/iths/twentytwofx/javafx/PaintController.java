@@ -51,6 +51,7 @@ public class PaintController {
         ShapeParameters shapeParameters = new ShapeParameters(mouseEvent.getX(), mouseEvent.getY(), paintModel.getColor(), paintModel.getSize());
         Shape shape = ShapeCreator.createShape(choiceBox.getValue(),shapeParameters);
         System.out.println(shape);
+        shape.draw(graphicsContext);
     }
 
     public void actionExit(ActionEvent actionEvent) {

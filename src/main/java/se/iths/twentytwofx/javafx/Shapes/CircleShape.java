@@ -13,7 +13,8 @@ public class CircleShape extends Shape {
 
     @Override
     public void draw(GraphicsContext context) {
-
+        context.setFill(getColor());
+        context.fillOval(getxCoordinate() - radius, getyCoordinate() - radius, getSize(), getSize());
     }
 
     //Todo: add circle info?
