@@ -36,6 +36,7 @@ public class PaintModel {
         currentShapeType = new SimpleObjectProperty<>(ShapeType.CIRCLE);
         color = new SimpleObjectProperty<>(Color.BLACK);
         size = new SimpleStringProperty("25");
+
     }
 
     public void setCurrentShapeType(ShapeType currentShapeType) {
@@ -71,8 +72,8 @@ public class PaintModel {
     }
 
 
-    public String getSize() {
-        return size.get();
+    public double getSize() {
+        return Double.parseDouble(size.get());
     }
 
     public StringProperty sizeProperty() {
@@ -88,7 +89,13 @@ public class PaintModel {
 
 
 
-    StringProperty sizePicker = new SimpleStringProperty();
+
+
+
+
+
+
+
 
 
     Deque<Command> undoStack = new ArrayDeque<>();

@@ -13,6 +13,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import se.iths.twentytwofx.javafx.Shapes.Shape;
 import se.iths.twentytwofx.javafx.Shapes.ShapeCreator;
+import se.iths.twentytwofx.javafx.Shapes.ShapeParameters;
 import se.iths.twentytwofx.javafx.Shapes.ShapeType;
 
 import java.io.File;
@@ -47,7 +48,8 @@ public class PaintController {
     }
 
     public void canvasAction(MouseEvent mouseEvent) {
-        Shape shape = ShapeCreator.createShape(choiceBox.getValue(), mouseEvent.getX(), mouseEvent.getY());
+        ShapeParameters shapeParameters = new ShapeParameters(mouseEvent.getX(), mouseEvent.getY(), paintModel.getColor(), paintModel.getSize());
+        Shape shape = ShapeCreator.createShape(choiceBox.getValue(),shapeParameters);
         System.out.println(shape);
     }
 
