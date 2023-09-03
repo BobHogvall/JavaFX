@@ -13,11 +13,9 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import se.iths.twentytwofx.javafx.Shapes.Shape;
 import se.iths.twentytwofx.javafx.Shapes.ShapeCreator;
-import se.iths.twentytwofx.javafx.Shapes.ShapeParameters;
 import se.iths.twentytwofx.javafx.Shapes.ShapeType;
 
 import java.io.File;
-import java.nio.file.Path;
 
 public class PaintController {
 
@@ -39,7 +37,7 @@ public class PaintController {
     public Stage stage;
     public GraphicsContext graphicsContext;
     public ChoiceBox<ShapeType> choiceBox;
-    ObservableList<ShapeType> shapeTypeList = FXCollections.observableArrayList(ShapeType.values());
+    ObservableList<ShapeType> shapeTypeList = FXCollections.observableArrayList(ShapeType.values()); // denna ska ligga i model
 
     PaintModel paintModel = new PaintModel();
 
