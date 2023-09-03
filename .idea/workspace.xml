@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="">
+    <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="add currentShapeType to model to">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" afterDir="false" />
@@ -102,7 +102,7 @@
       <workItem from="1673943000272" duration="988000" />
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
-      <workItem from="1693559341006" duration="34383000" />
+      <workItem from="1693559341006" duration="35035000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -242,7 +242,25 @@
       <option name="presentableId" value="LOCAL−00023" />
       <updated>1693768178248</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL−00024" summary="add getters and setters to model">
+      <created>1693768679839</created>
+      <option name="number" value="LOCAL−00024" />
+      <option name="presentableId" value="LOCAL−00024" />
+      <updated>1693768679839</updated>
+    </task>
+    <task id="LOCAL−00025" summary="remove observable list from controller to model because it shows data for the user and should therefor be handled by the model class">
+      <created>1693768752096</created>
+      <option name="number" value="LOCAL−00025" />
+      <option name="presentableId" value="LOCAL−00025" />
+      <updated>1693768752096</updated>
+    </task>
+    <task id="LOCAL−00026" summary="move currentShapeType to model from controller">
+      <created>1693769016899</created>
+      <option name="number" value="LOCAL−00026" />
+      <option name="presentableId" value="LOCAL−00026" />
+      <updated>1693769016899</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +300,10 @@
     <MESSAGE value="update model class with things for &quot;representing application data&quot;" />
     <MESSAGE value="remove redo button because I'm crying" />
     <MESSAGE value="regret and comment it out instead because I'm too anxious to remove anything" />
-    <option name="LAST_COMMIT_MESSAGE" value="regret and comment it out instead because I'm too anxious to remove anything" />
+    <MESSAGE value="add getters and setters to model" />
+    <MESSAGE value="remove observable list from controller to model because it shows data for the user and should therefor be handled by the model class" />
+    <MESSAGE value="move currentShapeType to model from controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="move currentShapeType to model from controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

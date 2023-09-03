@@ -42,9 +42,9 @@ public class PaintController {
     public void initialize(){
         graphicsContext = canvas.getGraphicsContext2D();
         choiceBox.setItems(paintModel.getShapeTypeList());
-
-        choiceBox.setValue(ShapeType.CIRCLE);
         choiceBox.valueProperty().bindBidirectional(paintModel.currentShapeTypeProperty());
+        colorPicker.valueProperty().bindBidirectional(paintModel.colorProperty());
+        sizePicker.textProperty().bindBidirectional(paintModel.sizeProperty());
 
 
         exit.setOnAction(this::actionExit);

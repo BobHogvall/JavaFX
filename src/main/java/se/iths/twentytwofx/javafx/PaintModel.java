@@ -26,16 +26,16 @@ public class PaintModel {
     private final ObservableList<Shape> shapeList;
     private final ObservableList<ShapeType> shapeTypeList;
     private final ObjectProperty<ShapeType> currentShapeType;
-
     private final ObjectProperty<Color> color;
-    private final ObjectProperty<Double> size;
+    private final StringProperty size;
+
 
     public PaintModel(){
         shapeList = observableArrayList();
         shapeTypeList = FXCollections.observableList(observableArrayList(ShapeType.values()));
         currentShapeType = new SimpleObjectProperty<>(ShapeType.CIRCLE);
         color = new SimpleObjectProperty<>(Color.BLACK);
-        size = new SimpleObjectProperty<>(25.0);
+        size = new SimpleStringProperty("25");
     }
 
     public void setCurrentShapeType(ShapeType currentShapeType) {
@@ -70,29 +70,18 @@ public class PaintModel {
         this.color.set(color);
     }
 
-    public Double getSize() {
+
+    public String getSize() {
         return size.get();
     }
 
-    public ObjectProperty<Double> sizeProperty() {
+    public StringProperty sizeProperty() {
         return size;
     }
 
-    public void setSize(Double size) {
+    public void setSize(String size) {
         this.size.set(size);
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
     private PointCoordinates pointCoordinates;
 
