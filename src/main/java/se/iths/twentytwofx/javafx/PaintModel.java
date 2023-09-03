@@ -9,7 +9,7 @@ import se.iths.twentytwofx.javafx.Shapes.Shape;
 import se.iths.twentytwofx.javafx.Shapes.ShapeCreator;
 import se.iths.twentytwofx.javafx.Shapes.ShapeType;
 
-import java.io.File;
+
 import java.nio.file.Path;
 
 public class PaintModel {
