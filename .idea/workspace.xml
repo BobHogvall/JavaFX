@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="">
+    <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="add contructor, getters and setters to parent shape&#10;add">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/ShapeParameters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/RectangleShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/SquareShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/CircleShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/CircleShape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/ShapeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/ShapeCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/SquareShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/SquareShape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,7 @@
       <workItem from="1673943000272" duration="988000" />
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
-      <workItem from="1693559341006" duration="22644000" />
+      <workItem from="1693559341006" duration="23475000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -195,7 +197,13 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1693676795079</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="change to square shape &#10;add to parent shape class">
+      <created>1693733268887</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1693733268887</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +235,7 @@
     <MESSAGE value="update save to Java nio" />
     <MESSAGE value="update saveToFile in Model" />
     <MESSAGE value="add draw to abstract class shape.&#10;add observableList to model" />
-    <option name="LAST_COMMIT_MESSAGE" value="add draw to abstract class shape.&#10;add observableList to model" />
+    <MESSAGE value="change to square shape &#10;add to parent shape class" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to square shape &#10;add to parent shape class" />
   </component>
 </project>

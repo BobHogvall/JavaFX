@@ -21,9 +21,7 @@ public class PaintModel {
     ObservableList<Shape> shapeObservableList = FXCollections.observableArrayList();
     StringProperty sizePicker = new SimpleStringProperty();
 
-    public void createShape(){
-        new ShapeCreator().createShape(ShapeType.CIRCLE);
-    }
+
 
     public void saveToFile(Path filePath){
 //        StringBuffer output = new StringBuffer();

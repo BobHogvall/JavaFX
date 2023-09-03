@@ -1,6 +1,12 @@
 package se.iths.twentytwofx.javafx.Shapes;
 
+import javafx.scene.paint.Color;
+
 public class CircleShape extends Shape {
+    public CircleShape(ShapeParameters shapeParameters) {
+        super(shapeParameters);
+    }
+
     @Override
     public void draw() {
 
