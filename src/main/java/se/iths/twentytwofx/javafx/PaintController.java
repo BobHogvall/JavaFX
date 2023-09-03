@@ -1,6 +1,8 @@
 package se.iths.twentytwofx.javafx;
 
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 
 import javafx.scene.canvas.Canvas;
@@ -9,6 +11,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import se.iths.twentytwofx.javafx.Shapes.Shape;
 import se.iths.twentytwofx.javafx.Shapes.ShapeCreator;
 import se.iths.twentytwofx.javafx.Shapes.ShapeParameters;
 import se.iths.twentytwofx.javafx.Shapes.ShapeType;
@@ -23,8 +26,8 @@ public class PaintController {
 
     public MenuItem exit;
     public MenuItem save;
-    public Button circle;
-    public Button rectangle;
+    // public Button circle;
+    // public Button rectangle;
     public ColorPicker colorPicker;
     public Button undo;
     public Button redo;
@@ -35,6 +38,8 @@ public class PaintController {
 
     public Stage stage;
     public GraphicsContext graphicsContext;
+    public ChoiceBox<ShapeType> choiceBox;
+    ObservableList<ShapeType> shapeTypeList = FXCollections.observableArrayList(ShapeType.values());
 
     PaintModel paintModel = new PaintModel();
 
@@ -44,9 +49,35 @@ public class PaintController {
 
     public void initialize(){
         graphicsContext = canvas.getGraphicsContext2D();
+        choiceBox.setItems(shapeTypeList);
+        choiceBox.setValue(ShapeType.CIRCLE);
+
         exit.setOnAction(this::actionExit);
 
     }
+    public void canvasAction(MouseEvent mouseEvent) {
+        Shape shape = ShapeCreator.createShape(choiceBox.getValue(), mouseEvent.getX(), mouseEvent.getY());
+        System.out.println(shape);
+        // , ShapeParameters shapeParameters, ShapeType type
+        // får inte ha mer än en inparameter här
+        //todo: metod för att rita på canvas
+        // if  shape exists do x
+        // else if  create new shape
+
+        // double whereTheyClickedXCoordinate = mouseEvent.getX();
+        // double whereTheyClickedYCoordinate = mouseEvent.getY();
+        //should information be added to shapeParameters?
+        //da fuck ska jag göra med dessa?
+        //todo: metod för att lägga in i undo-lista för att sedan kunna radera
+        //todo: något behöver kollas annars:
+        //  ShapeCreator.createShape(ShapeType.CIRCLE, shapeParameters);
+    }
+
+    // if they press circle ShapeType=Circle
+    // bring: color, size and where they press to get the right shape
+    // So, to ShapeParameters: send "color, size, x, y".
+    // then bring: type and Parameters to -> createShape
+
 
     public void actionExit(ActionEvent actionEvent) {
         Platform.exit();
@@ -89,27 +120,6 @@ public class PaintController {
         if (filePath != null)
             paintModel.saveToFile(filePath.toPath());
     }
-
-    public void canvasAction(MouseEvent mouseEvent) {
-        // , ShapeParameters shapeParameters, ShapeType type
-        // får inte ha mer än en inparameter här
-        //todo: metod för att rita på canvas
-        // if  shape exists do x
-        // else if  create new shape
-
-       // double whereTheyClickedXCoordinate = mouseEvent.getX();
-       // double whereTheyClickedYCoordinate = mouseEvent.getY();
-        //should information be added to shapeParameters?
-        //da fuck ska jag göra med dessa?
-        //todo: metod för att lägga in i undo-lista för att sedan kunna radera
-        //todo: något behöver kollas annars:
-      //  ShapeCreator.createShape(ShapeType.CIRCLE, shapeParameters);
-    }
-
-    // if they press circle ShapeType=Circle
-    // bring: color, size and where they press to get the right shape
-    // So, to ShapeParameters: send "color, size, x, y".
-    // then bring: type and Parameters to -> createShape
 
 }
 

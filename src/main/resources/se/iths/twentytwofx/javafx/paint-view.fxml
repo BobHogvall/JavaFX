@@ -12,8 +12,9 @@
         </Menu>
     </MenuBar>
     <HBox alignment="TOP_CENTER" prefHeight="24.0" prefWidth="600.0">
-        <Button fx:id="circle" mnemonicParsing="false" onAction="#circleAction" text="Circle" />
-        <Button fx:id="rectangle" mnemonicParsing="false" onAction="#rectangleAction" text="Rectangle" />
+        <ChoiceBox fx:id="choiceBox" prefWidth="100.0" accessibleText="Shape"/>
+ <!--       <Button fx:id="circle" mnemonicParsing="false" onAction="#circleAction" text="Circle" />
+        <Button fx:id="rectangle" mnemonicParsing="false" onAction="#rectangleAction" text="Rectangle" /> -->
         <ColorPicker fx:id="colorPicker" />
         <Button fx:id="colorChanger" mnemonicParsing="false" onAction="#colorChangerAction" text="Change Color" />
         <TextField fx:id="sizePicker" prefHeight="26.0" prefWidth="33.0" />
