@@ -37,13 +37,10 @@ public class PaintController {
     public Stage stage;
     public GraphicsContext graphicsContext;
 
-    ObservableList<ShapeType> shapeTypeList = FXCollections.observableArrayList(ShapeType.values()); // denna ska ligga i model
-
 
 
     public void initialize(){
         graphicsContext = canvas.getGraphicsContext2D();
-        choiceBox.setItems(shapeTypeList);
         choiceBox.setItems(paintModel.getShapeTypeList());
 
         choiceBox.setValue(ShapeType.CIRCLE);
