@@ -6,6 +6,7 @@ public abstract class Shape {
 
     //Todo: add information to be inherited by the actual shapes
 
+    // vill lagra var vi har klickat någonstans i ett shape objekt
     private double xCoordinate;
     private double yCoordinate;
     //perhaps pointCoordinates?

@@ -1,5 +1,6 @@
 package se.iths.twentytwofx.javafx;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 
 import javafx.scene.canvas.Canvas;
@@ -43,9 +44,12 @@ public class PaintController {
 
     public void initialize(){
         graphicsContext = canvas.getGraphicsContext2D();
+        exit.setOnAction(this::actionExit);
+
     }
 
     public void actionExit(ActionEvent actionEvent) {
+        Platform.exit();
     }
 
     public void onSave(ActionEvent actionEvent) {
@@ -86,18 +90,20 @@ public class PaintController {
             paintModel.saveToFile(filePath.toPath());
     }
 
-    public void canvasAction(MouseEvent mouseEvent, ShapeParameters shapeParameters, ShapeType type) {
+    public void canvasAction(MouseEvent mouseEvent) {
+        // , ShapeParameters shapeParameters, ShapeType type
+        // får inte ha mer än en inparameter här
         //todo: metod för att rita på canvas
         // if  shape exists do x
         // else if  create new shape
 
-        double whereTheyClickedXCoordinate = mouseEvent.getX();
-        double whereTheyClickedYCoordinate = mouseEvent.getY();
+       // double whereTheyClickedXCoordinate = mouseEvent.getX();
+       // double whereTheyClickedYCoordinate = mouseEvent.getY();
         //should information be added to shapeParameters?
         //da fuck ska jag göra med dessa?
         //todo: metod för att lägga in i undo-lista för att sedan kunna radera
         //todo: något behöver kollas annars:
-        ShapeCreator.createShape(type, shapeParameters);
+      //  ShapeCreator.createShape(ShapeType.CIRCLE, shapeParameters);
     }
 
     // if they press circle ShapeType=Circle

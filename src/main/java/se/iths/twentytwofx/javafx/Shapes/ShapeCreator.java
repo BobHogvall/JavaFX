@@ -7,7 +7,7 @@ public class ShapeCreator {
     public static Shape createShape(ShapeType shapeType, ShapeParameters shapeParameters){
         return switch (shapeType) {
             case CIRCLE -> new CircleShape(shapeParameters);
-            case  RECTANGLE -> new SquareShape(shapeParameters);
+            case  SQUARE -> new SquareShape(shapeParameters);
         };
     }
 }
