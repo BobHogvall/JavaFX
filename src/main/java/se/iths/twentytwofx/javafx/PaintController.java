@@ -18,10 +18,6 @@ import se.iths.twentytwofx.javafx.Shapes.ShapeType;
 import java.io.File;
 
 public class PaintController {
-
-    //Controller tar emot händelser och skickar vidare vad som hänt till modellen
-    //todo: listener/observable med Boolean/StringProperty för att registera förändringar
-
     PaintModel paintModel = new PaintModel();
 
     public MenuItem exit;
@@ -38,17 +34,12 @@ public class PaintController {
     public GraphicsContext graphicsContext;
 
 
-
     public void initialize(){
         graphicsContext = canvas.getGraphicsContext2D();
         choiceBox.setItems(paintModel.getShapeTypeList());
         choiceBox.valueProperty().bindBidirectional(paintModel.currentShapeTypeProperty());
         colorPicker.valueProperty().bindBidirectional(paintModel.colorProperty());
         sizePicker.textProperty().bindBidirectional(paintModel.sizeProperty());
-
-
-        exit.setOnAction(this::actionExit);
-
     }
     public void setStage(Stage stage) {
         this.stage = stage;
