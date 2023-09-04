@@ -1,7 +1,6 @@
 package se.iths.twentytwofx.javafx.Shapes;
 
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.paint.Color;
 
 public class SquareShape extends Shape {
 
@@ -16,6 +15,5 @@ public class SquareShape extends Shape {
         context.setFill(getColor());
         context.fillRect(getxCoordinate(), getyCoordinate(), getSize(), getSize());
     }
-    //Todo: add square info?
 }
 

@@ -1,8 +1,6 @@
 package se.iths.twentytwofx.javafx;
 
 import javafx.application.Platform;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 
 import javafx.scene.canvas.Canvas;
@@ -18,6 +16,8 @@ import se.iths.twentytwofx.javafx.Shapes.ShapeType;
 
 import java.io.File;
 
+
+// the Controller handles user interaction
 public class PaintController {
     public MenuItem exit;
     public MenuItem save;
@@ -41,6 +41,7 @@ public class PaintController {
         sizePicker.textProperty().bindBidirectional(paintModel.sizeProperty());
     }
 
+
     public void setStage(Stage stage) {
         this.stage = stage;
     }
@@ -48,8 +49,11 @@ public class PaintController {
     public void canvasAction(MouseEvent mouseEvent) {
         ShapeParameters shapeParameters = new ShapeParameters(mouseEvent.getX(), mouseEvent.getY(), paintModel.getColor(), paintModel.getSize());
         Shape shape = ShapeCreator.createShape(choiceBox.getValue(), shapeParameters);
-        System.out.println(shape);
-        shape.draw(graphicsContext);
+        paintModel.addShapeToShapeList(shape, graphicsContext);
+    }
+
+    public void undoAction(ActionEvent actionEvent) {
+        paintModel.undoShapeFromCanvas(graphicsContext);
     }
 
     public void actionExit(ActionEvent actionEvent) {
@@ -57,44 +61,29 @@ public class PaintController {
     }
 
 
-    // public void canvasAction(MouseEvent mouseEvent) {
-    //   Shape shape = ShapeCreator.createShape(choiceBox.getValue(), mouseEvent.getX(), mouseEvent.getY());
-    //   System.out.println(shape);
-    // , ShapeParameters shapeParameters, ShapeType type
-    // får inte ha mer än en inparameter här
-    //todo: metod för att rita på canvas
-    // if  shape exists do x
-    // else if  create new shape
 
-    // double whereTheyClickedXCoordinate = mouseEvent.getX();
-    // double whereTheyClickedYCoordinate = mouseEvent.getY();
-    //should information be added to shapeParameters?
-    //da fuck ska jag göra med dessa?
-    //todo: metod för att lägga in i undo-lista för att sedan kunna radera
-    //todo: något behöver kollas annars:
-    //  ShapeCreator.createShape(ShapeType.CIRCLE, shapeParameters);
-    //}
 
-    // if they press circle ShapeType=Circle
-    // bring: color, size and where they press to get the right shape
-    // So, to ShapeParameters: send "color, size, x, y".
-    // then bring: type and Parameters to -> createShape
+
+
+
+
+
+
+
+
 
 
     public void onSave(ActionEvent actionEvent) {
     }
 
-    public void colorChangerAction(ActionEvent actionEvent) {
+ //   public void colorChangerAction(ActionEvent actionEvent) {
         //todo: metod för att välja ändrad färg?
-    }
+ //   }
 
-    public void sizeChangerAction(ActionEvent actionEvent) {
+  //  public void sizeChangerAction(ActionEvent actionEvent) {
         //todo: change size
-    }
+   // }
 
-    public void undoAction(ActionEvent actionEvent) {
-        //todo: metod för att radera föregående, ev flera
-    }
 
     public void saveAction(ActionEvent actionEvent) {
         //todo: metod för att spara
