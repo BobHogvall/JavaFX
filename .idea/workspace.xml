@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="">
+    <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="add to circle class and add draw to canvas method in Controller aka A CIRCLE HAS BEEN DRAWN">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/CircleShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/CircleShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/se/iths/twentytwofx/javafx/paint-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/iths/twentytwofx/javafx/paint-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <workItem from="1673943000272" duration="988000" />
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
-      <workItem from="1693559341006" duration="38923000" />
+      <workItem from="1693559341006" duration="40229000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -284,7 +284,13 @@
       <option name="presentableId" value="LOCAL−00030" />
       <updated>1693773344617</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL−00031" summary="add to circle class and add draw to canvas method in Controller aka A CIRCLE HAS BEEN DRAWN">
+      <created>1693773952193</created>
+      <option name="number" value="LOCAL−00031" />
+      <option name="presentableId" value="LOCAL−00031" />
+      <updated>1693773952193</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +308,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create enum for shapes" />
     <MESSAGE value="add abstract class shape and circle + rectangle shape to inherit shape" />
     <MESSAGE value="create a factory" />
     <MESSAGE value="add more to view" />
@@ -327,7 +332,8 @@
     <MESSAGE value="remove unnecessary exitAction from initialization" />
     <MESSAGE value="commit before trying to use parameter class" />
     <MESSAGE value="change parameter class and change back to double for size" />
-    <option name="LAST_COMMIT_MESSAGE" value="change parameter class and change back to double for size" />
+    <MESSAGE value="add to circle class and add draw to canvas method in Controller aka A CIRCLE HAS BEEN DRAWN" />
+    <option name="LAST_COMMIT_MESSAGE" value="add to circle class and add draw to canvas method in Controller aka A CIRCLE HAS BEEN DRAWN" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
