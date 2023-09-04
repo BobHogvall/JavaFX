@@ -22,7 +22,7 @@
         <!--<Button fx:id="sizeChanger" mnemonicParsing="false" onAction="#sizeChangerAction" text="Change Size" />-->
         <Button fx:id="undo" mnemonicParsing="false" onAction="#undoAction" text="Undo" />
  <!--       <Button fx:id="redo" mnemonicParsing="false" onAction="#redoAction" text="Redo" /> -->
-        <CheckBox fx:id="selectMode" mnemonicParsing="false"  text="Pick Shape">
+        <CheckBox fx:id="selectMode" mnemonicParsing="false"  text="Pick Shape" onAction="#SelectShape">
             <padding>
                 <Insets top="4" bottom="4" left="4" />
             </padding>

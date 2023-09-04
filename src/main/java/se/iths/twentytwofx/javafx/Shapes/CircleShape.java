@@ -15,5 +15,11 @@ public class CircleShape extends Shape {
         context.setFill(getColor());
         context.fillOval(getxCoordinate() - radius, getyCoordinate() - radius, getSize(), getSize());
     }
+
+    @Override
+    public boolean isPointInsideShapeArea(double xSelectShape, double ySelectShape) {
+        double distance = Math.sqrt(Math.pow(xSelectShape - getxCoordinate(), 2) + Math.pow(ySelectShape - getyCoordinate(), 2));
+        return distance <= radius;
+    }
 }
 

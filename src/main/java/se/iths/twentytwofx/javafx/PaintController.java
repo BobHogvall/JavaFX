@@ -39,6 +39,7 @@ public class PaintController {
         choiceBox.valueProperty().bindBidirectional(paintModel.currentShapeTypeProperty());
         colorPicker.valueProperty().bindBidirectional(paintModel.colorProperty());
         sizePicker.textProperty().bindBidirectional(paintModel.sizeProperty());
+        selectMode.selectedProperty().bindBidirectional(paintModel.selectModeProperty());
     }
 
 
@@ -47,6 +48,20 @@ public class PaintController {
     }
 
     public void canvasAction(MouseEvent mouseEvent) {
+        if (selectMode.isSelected()) {
+            selectShapeToEdit(paintModel.isPointInsideShapeArea(mouseEvent.getX(), mouseEvent.getY()));
+        } else
+            drawNewShape(mouseEvent);
+    }
+
+    private void selectShapeToEdit(Shape shapeToEdit) {
+        if (shapeToEdit != null) {
+            shapeToEdit.setColor(paintModel.getColor());
+            shapeToEdit.setSize(paintModel.getSize());
+        }
+    }
+
+    private void drawNewShape(MouseEvent mouseEvent) {
         ShapeParameters shapeParameters = new ShapeParameters(mouseEvent.getX(), mouseEvent.getY(), paintModel.getColor(), paintModel.getSize());
         Shape shape = ShapeCreator.createShape(choiceBox.getValue(), shapeParameters);
         paintModel.addShapeToShapeList(shape, graphicsContext);
@@ -54,6 +69,12 @@ public class PaintController {
 
     public void undoAction(ActionEvent actionEvent) {
         paintModel.undoShapeFromCanvas(graphicsContext);
+    }
+
+    public void SelectShape(ActionEvent actionEvent) {
+        selectMode.setSelected(true);
+        //paintModel.isPointInsideShapeArea();
+        //jag kan just nu inte stänga av select mode
     }
 
     public void actionExit(ActionEvent actionEvent) {
@@ -97,6 +118,7 @@ public class PaintController {
         if (filePath != null)
             paintModel.saveToFile(filePath.toPath());
     }
+
 
 }
 

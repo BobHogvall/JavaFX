@@ -1,9 +1,6 @@
 package se.iths.twentytwofx.javafx;
 
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.canvas.GraphicsContext;
@@ -28,6 +25,7 @@ public class PaintModel {
     private final ObjectProperty<Color> color;
     private final StringProperty size;
     private final Deque<Command> undoStack;
+    private final BooleanProperty selectMode;
 
     private PointCoordinates pointCoordinates;
 
@@ -36,8 +34,9 @@ public class PaintModel {
         shapeTypeList = FXCollections.observableList(observableArrayList(ShapeType.values()));
         currentShapeType = new SimpleObjectProperty<>(ShapeType.CIRCLE);
         color = new SimpleObjectProperty<>(Color.BLACK);
-        size = new SimpleStringProperty("25");
+        size = new SimpleStringProperty("50");
         undoStack = new ArrayDeque<>();
+        selectMode = new SimpleBooleanProperty(false);
     }
 
     public ObservableList<Shape> getShapeList() {
@@ -72,7 +71,17 @@ public class PaintModel {
         return undoStack;
     }
 
+    public boolean isSelectMode() {
+        return selectMode.get();
+    }
 
+    public BooleanProperty selectModeProperty() {
+        return selectMode;
+    }
+
+    public void setSelectMode(boolean selectMode) {
+        this.selectMode.set(selectMode);
+    }
 
     void addShapeToShapeList(Shape shape, GraphicsContext graphicsContext) {
         getShapeList().add(shape);
@@ -80,7 +89,7 @@ public class PaintModel {
         addShapeToUndoDeque(shape);
     }
 
-    void drawShapeOnCanvas( GraphicsContext graphicsContext){
+    void drawShapeOnCanvas(GraphicsContext graphicsContext){
         graphicsContext.clearRect(0,0,graphicsContext.getCanvas().getWidth(), graphicsContext.getCanvas().getHeight());
         for (Shape s: getShapeList()) {
             s.draw(graphicsContext);
@@ -97,7 +106,17 @@ public class PaintModel {
             Command undoCommand = undoStack.pop();
             undoCommand.execute();
             drawShapeOnCanvas(graphicsContext);
+            // System.out.println("Undo Stack Size: " + undoStack.size());
+            // här kanske
         }
+    }
+
+    public Shape isPointInsideShapeArea(double xSelectShape, double ySelectShape){
+        for (Shape shape:getShapeList()) {
+            if (shape.isPointInsideShapeArea(xSelectShape, ySelectShape)) {
+                return shape;
+            }
+        } return null;
     }
 
 
@@ -119,6 +138,7 @@ public class PaintModel {
 //        }
 
     }
+
 
 
     @FunctionalInterface

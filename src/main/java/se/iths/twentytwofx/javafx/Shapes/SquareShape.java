@@ -4,7 +4,11 @@ import javafx.scene.canvas.GraphicsContext;
 
 public class SquareShape extends Shape {
 
-
+    double halfSide = getSize() / 2.0;
+    double minX = getxCoordinate() - halfSide;
+    double maxX = getxCoordinate() + halfSide;
+    double minY = getyCoordinate() - halfSide;
+    double maxY = getyCoordinate() + halfSide;
 
     public SquareShape(ShapeParameters shapeParameters) {
         super(shapeParameters);
@@ -14,6 +18,15 @@ public class SquareShape extends Shape {
     public void draw(GraphicsContext context) {
         context.setFill(getColor());
         context.fillRect(getxCoordinate(), getyCoordinate(), getSize(), getSize());
+    }
+
+    @Override
+    public boolean isPointInsideShapeArea(double xSelectShape, double ySelectShape) {
+        return xSelectShape >= minX &&
+                xSelectShape <= maxX &&
+                ySelectShape >= minY &&
+                ySelectShape <= maxY;
+
     }
 }
 

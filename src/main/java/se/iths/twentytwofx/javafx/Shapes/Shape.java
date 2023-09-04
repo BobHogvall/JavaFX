@@ -50,6 +50,9 @@ public abstract class Shape {
         this.size = size;
     }
 
+
     public abstract void draw(GraphicsContext context);
+
+    public abstract boolean isPointInsideShapeArea(double xCoordinate, double yCoordinate);
 
 }
