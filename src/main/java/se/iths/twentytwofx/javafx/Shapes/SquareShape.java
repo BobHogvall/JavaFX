@@ -4,9 +4,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
 public class SquareShape extends Shape {
-//    public SquareShape(double x, double y) {
-//        super(x, y);
-//    }
+
 
 
     public SquareShape(ShapeParameters shapeParameters) {
@@ -15,9 +13,9 @@ public class SquareShape extends Shape {
 
     @Override
     public void draw(GraphicsContext context) {
-
+        context.setFill(getColor());
+        context.fillRect(getxCoordinate(), getyCoordinate(), getSize(), getSize());
     }
-    //Todo: add rectangle info?
+    //Todo: add square info?
 }
 
-//perhaps change to square?
