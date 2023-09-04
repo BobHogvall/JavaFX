@@ -28,7 +28,6 @@ public class PaintModel {
     private final ObjectProperty<Color> color;
     private final StringProperty size;
     private final Deque<Command> undoStack;
-    //private final Deque<Deque<Shape>> undoStack;
 
     private PointCoordinates pointCoordinates;
 
