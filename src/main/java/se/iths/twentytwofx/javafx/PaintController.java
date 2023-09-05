@@ -72,38 +72,6 @@ public class PaintController {
         paintModel.undoShapeFromCanvas(graphicsContext);
     }
 
-    public void SelectShape(ActionEvent actionEvent) {
-
-    }
-
-    public void actionExit(ActionEvent actionEvent) {
-        Platform.exit();
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public void onSave(ActionEvent actionEvent) {
-    }
-
- //   public void colorChangerAction(ActionEvent actionEvent) {
-        //todo: metod för att välja ändrad färg?
- //   }
-
-  //  public void sizeChangerAction(ActionEvent actionEvent) {
-        //todo: change size
-   // }
-
 
     public void saveAction(ActionEvent actionEvent) {
         //todo: metod för att spara
@@ -118,6 +86,9 @@ public class PaintController {
             paintModel.saveToFile(filePath.toPath());
     }
 
+    public void exitAction(ActionEvent actionEvent) {
+        Platform.exit();
+    }
 
 }
 

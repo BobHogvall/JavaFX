@@ -8,8 +8,8 @@
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.iths.twentytwofx.javafx.PaintController">
     <MenuBar>
         <Menu mnemonicParsing="false" text="File">
-            <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#actionExit" text="Exit" />
-            <MenuItem fx:id="save" mnemonicParsing="false" onAction="#onSave" text="Save" />
+            <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitAction" text="Exit" />
+            <MenuItem fx:id="save" mnemonicParsing="false" onAction="#saveAction" text="Save" />
         </Menu>
     </MenuBar>
     <HBox alignment="TOP_CENTER" prefHeight="24.0" prefWidth="600.0">
@@ -22,7 +22,7 @@
         <!--<Button fx:id="sizeChanger" mnemonicParsing="false" onAction="#sizeChangerAction" text="Change Size" />-->
         <Button fx:id="undo" mnemonicParsing="false" onAction="#undoAction" text="Undo" />
  <!--       <Button fx:id="redo" mnemonicParsing="false" onAction="#redoAction" text="Redo" /> -->
-        <CheckBox fx:id="selectMode" mnemonicParsing="false"  text="Pick Shape" onAction="#SelectShape">
+        <CheckBox fx:id="selectMode" mnemonicParsing="false"  text="Pick Shape" >
             <padding>
                 <Insets top="4" bottom="4" left="4" />
             </padding>
