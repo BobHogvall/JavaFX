@@ -75,15 +75,7 @@ public class PaintController {
 
 
     public void saveAction(ActionEvent actionEvent) {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Save as");
-        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
-        fileChooser.getExtensionFilters().clear();
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("SVG", "*.svg"));
-
-        File filePath = fileChooser.showSaveDialog(stage);
-        if (filePath != null)
-            paintModel.saveToFile(filePath.toPath());
+        new SaveFile().save(paintModel, stage);
     }
 
     public void exitAction(ActionEvent actionEvent) {

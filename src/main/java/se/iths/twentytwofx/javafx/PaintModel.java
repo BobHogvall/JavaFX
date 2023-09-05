@@ -125,18 +125,4 @@ public class PaintModel {
         drawShapeOnCanvas(graphicsContext);
     }
 
-
-    public void saveToFile(Path file) {
-        StringBuffer output = new StringBuffer();
-        for (Shape shape: shapeList) {
-            output.append(shape); //getShape?
-        }
-        try {
-            Files.writeString(file, output.toString());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-
 }

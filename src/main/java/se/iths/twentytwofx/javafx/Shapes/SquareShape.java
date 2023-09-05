@@ -28,5 +28,11 @@ public class SquareShape extends Shape {
                 ySelectShape <= maxY;
 
     }
+
+    @Override
+    public String svgFormat() {
+        return String.format("<rect x=\"%f\" y=\"%f\" width=\"%f\" height=\"%f\" fill=\"%s\" />",
+                minX, minY, getSize(), getSize(), getColor().toString());
+    }
 }
 

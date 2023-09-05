@@ -21,5 +21,11 @@ public class CircleShape extends Shape {
         double distance = Math.sqrt(Math.pow(xSelectShape - getxCoordinate(), 2) + Math.pow(ySelectShape - getyCoordinate(), 2));
         return distance <= radius;
     }
+
+    @Override
+    public String svgFormat() {
+        return String.format("<circle cx=\"%f\" cy=\"%f\" r=\"%f\" fill=\"%s\" />",
+                getxCoordinate(), getyCoordinate(), radius, getColor().toString());
+    }
 }
 

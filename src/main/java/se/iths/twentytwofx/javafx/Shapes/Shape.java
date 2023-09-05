@@ -55,4 +55,5 @@ public abstract class Shape {
 
     public abstract boolean isPointInsideShapeArea(double xCoordinate, double yCoordinate);
 
+    public abstract String svgFormat();
 }

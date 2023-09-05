@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/SaveFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/CircleShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/CircleShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/SquareShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/SquareShape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +66,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="se.iths.twentytwofx.javafx" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="se.iths.twentytwofx.javafx" />
     </key>
@@ -103,7 +110,7 @@
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
       <workItem from="1693559341006" duration="66467000" />
-      <workItem from="1693911501006" duration="2406000" />
+      <workItem from="1693911501006" duration="7203000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -345,7 +352,19 @@
       <option name="presentableId" value="LOCAL−00040" />
       <updated>1693915535824</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL−00041" summary="add not possible to press save if canvas is empty">
+      <created>1693917747883</created>
+      <option name="number" value="LOCAL−00041" />
+      <option name="presentableId" value="LOCAL−00041" />
+      <updated>1693917747883</updated>
+    </task>
+    <task id="LOCAL−00042" summary="clean up code">
+      <created>1693920014752</created>
+      <option name="number" value="LOCAL−00042" />
+      <option name="presentableId" value="LOCAL−00042" />
+      <updated>1693920014752</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,8 +382,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change to square shape &#10;add to parent shape class" />
-    <MESSAGE value="add constructor, getters and setters to parent shape&#10;change to ObjectParameter for constructor&#10;change parameters in circle, square and ShapeCreator to align with new parameter class" />
     <MESSAGE value="add comments to canvasAction to try and figure out how it is supposed to work and what it needs and from where - what utter chaos" />
     <MESSAGE value="make exit action work&#10;remove in parameters for canvasAction since it can only have one" />
     <MESSAGE value="change circle/square buttons to choiceBox and simplify createShape to match the lecture to get a better understanding of how everything is connected and their functions" />
@@ -388,7 +405,9 @@
     <MESSAGE value="edit view and action names" />
     <MESSAGE value="edit editShape method" />
     <MESSAGE value="add save with csv (should be svg)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add save with csv (should be svg)" />
+    <MESSAGE value="add not possible to press save if canvas is empty" />
+    <MESSAGE value="clean up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
