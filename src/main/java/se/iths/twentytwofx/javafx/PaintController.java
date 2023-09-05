@@ -58,7 +58,6 @@ public class PaintController {
             paintModel.editShapeOnCanvas(shape, graphicsContext, this);
         } else
             drawNewShape(mouseEvent);
-
     }
 
     private void drawNewShape(MouseEvent mouseEvent) {

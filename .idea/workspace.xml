@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/SaveFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/PaintModelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/Shape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,7 @@
       <recent name="se.iths.twentytwofx.javafx" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PaintModelTest.testThatAddToShapeListMethodWorks">
+  <component name="RunManager">
     <configuration name="PaintModelTest.test1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javafx" />
       <extension name="coverage">
@@ -176,7 +178,7 @@
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
       <workItem from="1693559341006" duration="66467000" />
-      <workItem from="1693911501006" duration="11966000" />
+      <workItem from="1693911501006" duration="12343000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -442,7 +444,13 @@
       <option name="presentableId" value="LOCAL−00044" />
       <updated>1693929312868</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL−00045" summary="add 2 tests">
+      <created>1693939463349</created>
+      <option name="number" value="LOCAL−00045" />
+      <option name="presentableId" value="LOCAL−00045" />
+      <updated>1693939463349</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change circle/square buttons to choiceBox and simplify createShape to match the lecture to get a better understanding of how everything is connected and their functions" />
     <MESSAGE value="update model class with things for &quot;representing application data&quot;" />
     <MESSAGE value="remove redo button because I'm crying" />
     <MESSAGE value="regret and comment it out instead because I'm too anxious to remove anything" />
@@ -485,7 +492,8 @@
     <MESSAGE value="clean up code" />
     <MESSAGE value="add saveFile (as of right now it saves a white image)" />
     <MESSAGE value="fix formation of shapes to svg so colors show up" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix formation of shapes to svg so colors show up" />
+    <MESSAGE value="add 2 tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2 tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

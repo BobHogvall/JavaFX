@@ -100,8 +100,6 @@ public class PaintModel {
             Command undoCommand = undoStack.pop();
             undoCommand.execute();
             drawShapeOnCanvas(graphicsContext);
-            // System.out.println("Undo Stack Size: " + undoStack.size());
-            // här kanske
         }
     }
 
