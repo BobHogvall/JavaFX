@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/SaveFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/SaveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/SaveFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/CircleShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/CircleShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/SquareShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/SquareShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/PaintModelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/SaveFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/PaintModelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,21 +68,8 @@
       <recent name="se.iths.twentytwofx.javafx" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PaintApplication">
-    <configuration name="PaintApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="se.iths.twentytwofx.javafx.PaintApplication" />
-      <module name="javafx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="se.iths.twentytwofx.javafx.Shapes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SaveFileTest.testSaveCanvasWithShapes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PaintModelTest.testThatAddToShapeListMethodWorks">
+    <configuration name="PaintModelTest.test1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javafx" />
       <extension name="coverage">
         <pattern>
@@ -97,14 +78,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="se.iths.twentytwofx.javafx" />
-      <option name="MAIN_CLASS_NAME" value="se.iths.twentytwofx.javafx.SaveFileTest" />
-      <option name="METHOD_NAME" value="testSaveCanvasWithShapes" />
+      <option name="MAIN_CLASS_NAME" value="se.iths.twentytwofx.javafx.PaintModelTest" />
+      <option name="METHOD_NAME" value="test1(javafx.scene.canvas.GraphicsContext)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SaveFileTest.testSaveEmptyCanvas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PaintModelTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javafx" />
       <extension name="coverage">
         <pattern>
@@ -113,8 +94,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="se.iths.twentytwofx.javafx" />
-      <option name="MAIN_CLASS_NAME" value="se.iths.twentytwofx.javafx.SaveFileTest" />
-      <option name="METHOD_NAME" value="testSaveEmptyCanvas" />
+      <option name="MAIN_CLASS_NAME" value="se.iths.twentytwofx.javafx.PaintModelTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaintModelTest.testThatAddToShapeListMethodWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javafx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.iths.twentytwofx.javafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.iths.twentytwofx.javafx" />
+      <option name="MAIN_CLASS_NAME" value="se.iths.twentytwofx.javafx.PaintModelTest" />
+      <option name="METHOD_NAME" value="testThatAddToShapeListMethodWorks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaintModelTest.testThatAddToUndoDequeMethodWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javafx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.iths.twentytwofx.javafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.iths.twentytwofx.javafx" />
+      <option name="MAIN_CLASS_NAME" value="se.iths.twentytwofx.javafx.PaintModelTest" />
+      <option name="METHOD_NAME" value="testThatAddToUndoDequeMethodWorks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaintModelTest.testThatUndoMethodWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javafx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.iths.twentytwofx.javafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.iths.twentytwofx.javafx" />
+      <option name="MAIN_CLASS_NAME" value="se.iths.twentytwofx.javafx.PaintModelTest" />
+      <option name="METHOD_NAME" value="testThatUndoMethodWorks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,9 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PaintApplication" />
-        <item itemvalue="JUnit.SaveFileTest.testSaveCanvasWithShapes" />
-        <item itemvalue="JUnit.SaveFileTest.testSaveEmptyCanvas" />
+        <item itemvalue="JUnit.PaintModelTest.testThatAddToShapeListMethodWorks" />
+        <item itemvalue="JUnit.PaintModelTest.testThatUndoMethodWorks" />
+        <item itemvalue="JUnit.PaintModelTest.testThatAddToUndoDequeMethodWorks" />
+        <item itemvalue="JUnit.PaintModelTest.test1" />
+        <item itemvalue="JUnit.PaintModelTest.test1 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +176,7 @@
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
       <workItem from="1693559341006" duration="66467000" />
-      <workItem from="1693911501006" duration="8681000" />
+      <workItem from="1693911501006" duration="11966000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -405,7 +436,13 @@
       <option name="presentableId" value="LOCAL−00043" />
       <updated>1693927257063</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL−00044" summary="fix formation of shapes to svg so colors show up">
+      <created>1693929312868</created>
+      <option name="number" value="LOCAL−00044" />
+      <option name="presentableId" value="LOCAL−00044" />
+      <updated>1693929312868</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="make exit action work&#10;remove in parameters for canvasAction since it can only have one" />
     <MESSAGE value="change circle/square buttons to choiceBox and simplify createShape to match the lecture to get a better understanding of how everything is connected and their functions" />
     <MESSAGE value="update model class with things for &quot;representing application data&quot;" />
     <MESSAGE value="remove redo button because I'm crying" />
@@ -448,7 +484,8 @@
     <MESSAGE value="add not possible to press save if canvas is empty" />
     <MESSAGE value="clean up code" />
     <MESSAGE value="add saveFile (as of right now it saves a white image)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add saveFile (as of right now it saves a white image)" />
+    <MESSAGE value="fix formation of shapes to svg so colors show up" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix formation of shapes to svg so colors show up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
