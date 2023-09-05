@@ -5,20 +5,20 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
-import javafx.stage.FileChooser;
 import se.iths.twentytwofx.javafx.Shapes.PointCoordinates;
 import se.iths.twentytwofx.javafx.Shapes.Shape;
 import se.iths.twentytwofx.javafx.Shapes.ShapeType;
 
 
-import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
 import static javafx.collections.FXCollections.observableArrayList;
 
-//he Model managing the application's state and data
+//he Model manages the application's state and data
 
 public class PaintModel {
     private final ObservableList<Shape> shapeList;
@@ -128,9 +128,16 @@ public class PaintModel {
     }
 
 
-    public void saveToFile(File file) {
-
-
+    public void saveToFile(Path file) {
+        StringBuffer output = new StringBuffer();
+        for (Shape shape: shapeList) {
+            output.append(shape); //getShape?
+        }
+        try {
+            Files.writeString(file, output.toString());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 

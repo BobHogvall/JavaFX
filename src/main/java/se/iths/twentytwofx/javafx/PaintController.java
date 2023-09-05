@@ -1,6 +1,7 @@
 package se.iths.twentytwofx.javafx;
 
 import javafx.application.Platform;
+import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 
 import javafx.scene.canvas.Canvas;
@@ -39,6 +40,7 @@ public class PaintController {
         choiceBox.valueProperty().bindBidirectional(paintModel.currentShapeTypeProperty());
         colorPicker.valueProperty().bindBidirectional(paintModel.colorProperty());
         sizePicker.textProperty().bindBidirectional(paintModel.sizeProperty());
+        save.disableProperty().bind(Bindings.isEmpty(paintModel.getShapeList()));
     }
 
 
@@ -77,12 +79,11 @@ public class PaintController {
         fileChooser.setTitle("Save as");
         fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
         fileChooser.getExtensionFilters().clear();
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV", "*.csv"));
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("SVG", "*.svg"));
 
-        File file = fileChooser.showSaveDialog(stage);
-        paintModel.saveToFile(file);
-        //if (filePath != null)
-        //    paintModel.saveToFile(filePath.toPath().toFile());
+        File filePath = fileChooser.showSaveDialog(stage);
+        if (filePath != null)
+            paintModel.saveToFile(filePath.toPath());
     }
 
     public void exitAction(ActionEvent actionEvent) {

@@ -103,7 +103,7 @@
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
       <workItem from="1693559341006" duration="66467000" />
-      <workItem from="1693911501006" duration="893000" />
+      <workItem from="1693911501006" duration="2406000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -339,7 +339,13 @@
       <option name="presentableId" value="LOCAL−00039" />
       <updated>1693901443052</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL−00040" summary="add save with csv (should be svg)">
+      <created>1693915535824</created>
+      <option name="number" value="LOCAL−00040" />
+      <option name="presentableId" value="LOCAL−00040" />
+      <updated>1693915535824</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +363,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add draw to abstract class shape.&#10;add observableList to model" />
     <MESSAGE value="change to square shape &#10;add to parent shape class" />
     <MESSAGE value="add constructor, getters and setters to parent shape&#10;change to ObjectParameter for constructor&#10;change parameters in circle, square and ShapeCreator to align with new parameter class" />
     <MESSAGE value="add comments to canvasAction to try and figure out how it is supposed to work and what it needs and from where - what utter chaos" />
@@ -382,7 +387,8 @@
     <MESSAGE value="add possibility to edit previously added shape" />
     <MESSAGE value="edit view and action names" />
     <MESSAGE value="edit editShape method" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit editShape method" />
+    <MESSAGE value="add save with csv (should be svg)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add save with csv (should be svg)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
