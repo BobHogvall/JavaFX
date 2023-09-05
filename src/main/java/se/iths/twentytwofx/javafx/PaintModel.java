@@ -5,7 +5,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
-import se.iths.twentytwofx.javafx.Shapes.PointCoordinates;
 import se.iths.twentytwofx.javafx.Shapes.Shape;
 import se.iths.twentytwofx.javafx.Shapes.ShapeType;
 
@@ -29,7 +28,6 @@ public class PaintModel {
     private final Deque<Command> undoStack;
     private final BooleanProperty selectMode;
 
-    private PointCoordinates pointCoordinates;
 
     public PaintModel() {
         shapeList = observableArrayList();
@@ -140,12 +138,5 @@ public class PaintModel {
         }
     }
 
-
-
-
-    @FunctionalInterface
-    interface Command {
-        void execute();
-    }
 
 }
