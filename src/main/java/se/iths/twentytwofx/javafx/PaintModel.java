@@ -5,11 +5,13 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
+import javafx.stage.FileChooser;
 import se.iths.twentytwofx.javafx.Shapes.PointCoordinates;
 import se.iths.twentytwofx.javafx.Shapes.Shape;
 import se.iths.twentytwofx.javafx.Shapes.ShapeType;
 
 
+import java.io.File;
 import java.nio.file.Path;
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -126,22 +128,8 @@ public class PaintModel {
     }
 
 
+    public void saveToFile(File file) {
 
-
-
-
-
-
-
-
-
-    public void saveToFile(Path filePath) {
-//        StringBuffer output = new StringBuffer();
-//        for (ShapeCreator s : shapeObservableList) {
-//            output.append(s.getShape)
-//        Todo: kommer ev ändras pga svg och har inget att skriva här just nu
-        // also har bara skrivit grejer här i cuz
-//        }
 
     }
 

@@ -73,16 +73,16 @@ public class PaintController {
 
 
     public void saveAction(ActionEvent actionEvent) {
-        //todo: metod för att spara
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Save as");
         fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
         fileChooser.getExtensionFilters().clear();
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV", "*.csv"));
 
-        File filePath = fileChooser.showSaveDialog(stage);
-        if (filePath != null)
-            paintModel.saveToFile(filePath.toPath());
+        File file = fileChooser.showSaveDialog(stage);
+        paintModel.saveToFile(file);
+        //if (filePath != null)
+        //    paintModel.saveToFile(filePath.toPath().toFile());
     }
 
     public void exitAction(ActionEvent actionEvent) {
