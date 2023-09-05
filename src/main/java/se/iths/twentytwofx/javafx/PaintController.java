@@ -55,11 +55,10 @@ public class PaintController {
 
     public void selectShapeToEdit(Shape shape, MouseEvent mouseEvent, GraphicsContext graphicsContext) {
         if (shape != null) {
-            shape.setColor(paintModel.getColor());
-            shape.setSize(paintModel.getSize());
-            paintModel.drawShapeOnCanvas(graphicsContext);
+            paintModel.editShapeOnCanvas(shape, graphicsContext, this);
         } else
             drawNewShape(mouseEvent);
+
     }
 
     private void drawNewShape(MouseEvent mouseEvent) {

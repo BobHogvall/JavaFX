@@ -119,6 +119,12 @@ public class PaintModel {
         } return null;
     }
 
+    void editShapeOnCanvas(Shape shape, GraphicsContext graphicsContext, PaintController paintController) {
+        shape.setColor(getColor());
+        shape.setSize(getSize());
+        drawShapeOnCanvas(graphicsContext);
+    }
+
 
 
 
@@ -138,6 +144,7 @@ public class PaintModel {
 //        }
 
     }
+
 
 
 
