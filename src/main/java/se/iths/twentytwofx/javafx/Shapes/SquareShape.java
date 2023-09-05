@@ -22,17 +22,15 @@ public class SquareShape extends Shape {
 
     @Override
     public boolean isPointInsideShapeArea(double xSelectShape, double ySelectShape) {
-        return xSelectShape >= minX &&
-                xSelectShape <= maxX &&
-                ySelectShape >= minY &&
-                ySelectShape <= maxY;
+        return xSelectShape >= minX && xSelectShape <= maxX &&
+                ySelectShape >= minY && ySelectShape <= maxY;
 
     }
 
     @Override
     public String svgFormat() {
-        return String.format("<rect x=\"%f\" y=\"%f\" width=\"%f\" height=\"%f\" fill=\"%s\" />",
-                minX, minY, getSize(), getSize(), getColor().toString());
+        return "<rect x=\"" + getxCoordinate() + "\" y=\"" + getyCoordinate() + "\" width=\"" + getSize() +
+                "\" height=\"" + getSize() + "\" fill=\"#" + getColor().toString().substring(2, 10) + "\" />";
     }
 }
 

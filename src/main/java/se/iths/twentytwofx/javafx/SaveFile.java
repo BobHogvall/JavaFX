@@ -29,7 +29,7 @@ public class SaveFile {
         return fileChooser;
     }
 
-    public void save(PaintModel paintModel, Stage stage) {
+    public void save(PaintModel paintModel, Stage stage, File file) {
         Path path = getPath(stage);
         if (path != null) {
             setSVGtoPath(paintModel, path);

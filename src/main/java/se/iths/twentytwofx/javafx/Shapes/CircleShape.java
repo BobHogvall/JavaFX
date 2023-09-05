@@ -24,8 +24,8 @@ public class CircleShape extends Shape {
 
     @Override
     public String svgFormat() {
-        return String.format("<circle cx=\"%f\" cy=\"%f\" r=\"%f\" fill=\"%s\" />",
-                getxCoordinate(), getyCoordinate(), radius, getColor().toString());
+        return "<circle cx=\"" + getxCoordinate() + "\" cy=\"" + getyCoordinate() + "\" r=\"" + (getSize() / 2) +
+                "\" fill=\"#" + getColor().toString().substring(2,10) + "\" />";
     }
 }
 

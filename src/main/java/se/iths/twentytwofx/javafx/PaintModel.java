@@ -7,14 +7,8 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 import se.iths.twentytwofx.javafx.Shapes.Shape;
 import se.iths.twentytwofx.javafx.Shapes.ShapeType;
-
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayDeque;
 import java.util.Deque;
-
 import static javafx.collections.FXCollections.observableArrayList;
 
 //he Model manages the application's state and data
@@ -83,7 +77,7 @@ public class PaintModel {
         this.selectMode.set(selectMode);
     }
 
-    void addShapeToShapeList(Shape shape, GraphicsContext graphicsContext) {
+    public void addShapeToShapeList(Shape shape, GraphicsContext graphicsContext) {
         getShapeList().add(shape);
         drawShapeOnCanvas(graphicsContext);
         addShapeToUndoDeque(shape);

@@ -3,12 +3,10 @@ package se.iths.twentytwofx.javafx;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
-
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import se.iths.twentytwofx.javafx.Shapes.Shape;
 import se.iths.twentytwofx.javafx.Shapes.ShapeCreator;
@@ -75,7 +73,7 @@ public class PaintController {
 
 
     public void saveAction(ActionEvent actionEvent) {
-        new SaveFile().save(paintModel, stage);
+        new SaveFile().save(paintModel, stage, new File("nonexistent_folder/nonexistent_file.svg"));
     }
 
     public void exitAction(ActionEvent actionEvent) {
