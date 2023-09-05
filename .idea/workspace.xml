@@ -7,11 +7,6 @@
     <list default="true" id="5f523e4a-2b8b-4c00-82cc-463222e708ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/PaintModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/CircleShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/CircleShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/SquareShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/twentytwofx/javafx/Shapes/SquareShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/se/iths/twentytwofx/javafx/paint-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/se/iths/twentytwofx/javafx/paint-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/PaintModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/iths/twentytwofx/javafx/PaintModelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +102,7 @@
       <workItem from="1673943000272" duration="988000" />
       <workItem from="1675073954955" duration="480000" />
       <workItem from="1693559250513" duration="57000" />
-      <workItem from="1693559341006" duration="62099000" />
+      <workItem from="1693559341006" duration="64794000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <created>1671643857613</created>
@@ -319,7 +314,13 @@
       <option name="presentableId" value="LOCAL−00035" />
       <updated>1693831181336</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL−00036" summary="start adding code for select mode">
+      <created>1693860253923</created>
+      <option name="number" value="LOCAL−00036" />
+      <option name="presentableId" value="LOCAL−00036" />
+      <updated>1693860253926</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +338,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edit view" />
     <MESSAGE value="add save with csv" />
     <MESSAGE value="update save to Java nio" />
     <MESSAGE value="update saveToFile in Model" />
@@ -362,7 +362,8 @@
     <MESSAGE value="update circle and square" />
     <MESSAGE value="add undo function (LETSGOO)" />
     <MESSAGE value="change canvas size &#10;clean up some code" />
-    <option name="LAST_COMMIT_MESSAGE" value="change canvas size &#10;clean up some code" />
+    <MESSAGE value="start adding code for select mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="start adding code for select mode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

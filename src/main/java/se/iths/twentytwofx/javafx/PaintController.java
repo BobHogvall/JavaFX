@@ -39,7 +39,6 @@ public class PaintController {
         choiceBox.valueProperty().bindBidirectional(paintModel.currentShapeTypeProperty());
         colorPicker.valueProperty().bindBidirectional(paintModel.colorProperty());
         sizePicker.textProperty().bindBidirectional(paintModel.sizeProperty());
-        selectMode.selectedProperty().bindBidirectional(paintModel.selectModeProperty());
     }
 
 
@@ -49,16 +48,18 @@ public class PaintController {
 
     public void canvasAction(MouseEvent mouseEvent) {
         if (selectMode.isSelected()) {
-            selectShapeToEdit(paintModel.isPointInsideShapeArea(mouseEvent.getX(), mouseEvent.getY()));
+            selectShapeToEdit(paintModel.isPointInsideShapeArea(mouseEvent.getX(), mouseEvent.getY()), mouseEvent, graphicsContext);
         } else
             drawNewShape(mouseEvent);
     }
 
-    private void selectShapeToEdit(Shape shapeToEdit) {
-        if (shapeToEdit != null) {
-            shapeToEdit.setColor(paintModel.getColor());
-            shapeToEdit.setSize(paintModel.getSize());
-        }
+    public void selectShapeToEdit(Shape shape, MouseEvent mouseEvent, GraphicsContext graphicsContext) {
+        if (shape != null) {
+            shape.setColor(paintModel.getColor());
+            shape.setSize(paintModel.getSize());
+            paintModel.drawShapeOnCanvas(graphicsContext);
+        } else
+            drawNewShape(mouseEvent);
     }
 
     private void drawNewShape(MouseEvent mouseEvent) {
@@ -72,9 +73,7 @@ public class PaintController {
     }
 
     public void SelectShape(ActionEvent actionEvent) {
-        selectMode.setSelected(true);
-        //paintModel.isPointInsideShapeArea();
-        //jag kan just nu inte stänga av select mode
+
     }
 
     public void actionExit(ActionEvent actionEvent) {
